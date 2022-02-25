@@ -1,5 +1,6 @@
-const val KOTLIN_VERSION = "1.5.21"
+const val KOTLIN_VERSION = "1.5.31"
 const val JUNIT5_VERSION = "5.7.2"
+const val COMPOSE_VERSION = "1.0.5"
 
 object Kotlin {
     const val STDLIB = "org.jetbrains.kotlin:kotlin-stdlib:$KOTLIN_VERSION"
@@ -13,17 +14,16 @@ object Androidx {
 }
 
 object Compose {
-  private const val VERSION = "1.0.5"
+  const val UI = "androidx.compose.ui:ui:$COMPOSE_VERSION"
+  const val UI_TOOLING = "androidx.compose.ui:ui-tooling:$COMPOSE_VERSION"
+  const val FOUNDATION = "androidx.compose.foundation:foundation:$COMPOSE_VERSION"
+  const val MATERIAL_DESIGN = "androidx.compose.material:material:$COMPOSE_VERSION"
+  const val MATERIAL_ICONS = "androidx.compose.material:material-icons-core:$COMPOSE_VERSION"
+  const val MATERIAL_ICONS_EXTENDED = "androidx.compose.material:material-icons-extended:$COMPOSE_VERSION"
+  const val RUNTIME_LIVEDATA = "androidx.compose.runtime:runtime-livedata:$COMPOSE_VERSION"
+  const val ACTIVITY = "androidx.activity:activity-compose:1.4.0"
 
-  const val UI = "androidx.compose.ui:ui:$VERSION"
-  const val UI_TOOLING = "androidx.compose.ui:ui-tooling:$VERSION"
-  const val FOUNDATION = "androidx.compose.foundation:foundation:$VERSION"
-  const val MATERIAL_DESIGN = "androidx.compose.material:material:$VERSION"
-  const val MATERIAL_ICONS = "androidx.compose.material:material-icons-core:$VERSION"
-  const val MATERIAL_ICONS_EXTENDED = "androidx.compose.material:material-icons-extended:$VERSION"
-  const val RUNTIME_LIVEDATA = "androidx.compose.runtime:runtime-livedata:$VERSION"
-
-  const val ANDROID_TEST = "androidx.compose.ui:ui-test-junit4:$VERSION"
+  const val ANDROID_TEST = "androidx.compose.ui:ui-test-junit4:$COMPOSE_VERSION"
 }
 
 object Test {
