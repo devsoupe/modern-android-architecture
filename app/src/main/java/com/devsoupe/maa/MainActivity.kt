@@ -10,13 +10,13 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.devsoupe.maa.ui.theme.ModernandroidarchitectureTheme
+import com.devsoupe.maa.ui.theme.ModernAndroidArchitectureTheme
 
 class MainActivity : ComponentActivity() {
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContent {
-      ModernandroidarchitectureTheme {
+      ModernAndroidArchitectureTheme {
         // A surface container using the 'background' color from the theme
         Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colors.background) {
           Greeting("Android")
@@ -34,7 +34,7 @@ fun Greeting(name: String) {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-  ModernandroidarchitectureTheme {
+  ModernAndroidArchitectureTheme {
     Greeting("Android")
   }
 }
